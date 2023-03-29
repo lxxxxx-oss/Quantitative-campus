@@ -1,0 +1,113 @@
+/* 清除全局样式 */
+page {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F6FA ;
+}
+/* 头部样式 */
+.headerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130rpx;
+    background-color: #336699;
+    color: #fff;
+    font-size: 35rpx;
+    font-weight: Bold;
+}
+
+/* 用户信息区域 */
+.message {
+    display: flex;
+    align-items: center;
+    height: 200rpx;
+    width: 95%;
+    background-color: #fff;
+    margin: 30rpx 20rpx 0 20rpx;
+    border-radius: 20rpx;
+    box-shadow: 4rpx 4rpx 15rpx 0 rgba(0, 0, 0, .3);
+}
+/* 用户头像 */
+.avatar image {
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50%;
+    margin-left: 30rpx;
+}
+/* 用户基本信息 */
+.introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50rpx;
+    font-size: 35rpx;
+}
+/* 用户名称 */
+.userName {
+    color: black;
+    margin: 0 40rpx 0 0;
+}
+/* 用户身份 */
+.identity {
+    margin-top: 5rpx;
+}
+/* 专业信息展示 */
+.majorInfor {
+    font-size: 35rpx;
+    font-weight: lighter;
+}
+.classify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B0000 ;
+    height: 80rpx;
+    margin: 50rpx 50rpx 20rpx 50rpx;
+}
+/* 添加班级 */
+.add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rpx;
+}
+/* 班级信息 */
+.classNum {
+    width: 200rpx;
+    margin: -20rpx 300rpx 0 530rpx;
+    line-height:60rpx;
+    background-color: #fff;
+}
+
+/* 展示专业班级信息 */
+.classMessage {
+    height: 250rpx;
+    width: 95%;
+    margin: 30rpx 20rpx 0 20rpx;
+    padding: 0 40rpx 0 40rpx;
+    background-color: #4BB5E9;
+    border-radius: 15rpx;
+    color: #fff;
+    box-shadow: 4rpx 4rpx 15rpx 0 rgba(0, 0, 0, 0.4);
+}
+.college {
+    padding: 20rpx 0 10rpx 0;
+    font-size: 43rpx;
+    font-weight: 550;
+}
+.majorName {
+  margin: 35rpx 0;
+  font-size: 35rpx;
+  font-weight: 550;
+}
+.majorClass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30rpx;
+}
+.num {
+    padding-top: 30rpx;
+    color: #fff;
+}
+

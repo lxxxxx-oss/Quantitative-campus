@@ -1,0 +1,15 @@
+<!-- 大学生涯 -->
+<!-- 选择要查询成绩的类别 -->
+<view class="careerTitle" bindtap="scoreQuery">
+    <image src="/assets/img/index/stu-icon/grade.png"></image>
+    <view class="checkGrade">
+        成绩查询（点击查看）：{{category}}
+    </view>
+</view>
+<!-- 时间的选择 -->
+<view class="changeTime" bindtap="timeQuery" wx:if="{{!time}}">请选择要查询的时间</view>
+<view class="changeTime" bindtap="timeQuery">{{time}}</view>
+
+<!-- 成绩的展示 -->
+<finalGrade wx:if="{{category === '期末成绩' && time}}"></finalGrade>
+<moralCulture wx:if="{{category === '综测成绩'}}"></moralCulture>

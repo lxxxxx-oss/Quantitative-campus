@@ -1,0 +1,74 @@
+page {
+    margin: 0;
+    padding: 0;
+}
+.printTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20rpx 0 20rpx 0;
+    padding: 20rpx 50rpx 20rpx 50rpx;
+    font-size: 50rpx;
+    text-align: center;
+    font-weight: 550;
+}
+.printBtn {
+    background-color: #4BB5E9;
+    padding: 15rpx 60rpx 15rpx 60rpx;
+    border-radius: 40rpx;
+    font-size: 35rpx;
+    color: #fff;
+}
+.su-table-box {
+    height: 100%;
+    overflow-x: auto;
+    padding-bottom: 40rpx;
+}
+
+.su-table {
+    margin: 0 auto;
+    display: table;
+    border-collapse: collapse;
+    overflow-x: auto;
+    word-break: keep-all;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    width: 90%;
+    border-radius: 20rpx;
+}
+
+.su-tr {
+    display: table-row;
+}
+.su-th {
+    display: table-cell;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border: 1rpx solid #DDDDDD;
+    border-right: none;
+    border-bottom: none;
+    background-color: #87CEFA;
+    color: #FFFFFF;
+}
+
+.su-td {
+    padding: 0rpx 30rpx;
+    display: table-cell;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border: 1rpx solid #DDDDDD;
+    border-right: none;
+}
+.su-table-box .su-table .su-tr:nth-child(2) {
+    color: red;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<!-- 这里是班级信息详情 -->
+<!-- 功能分类tab -->
+<view class="capacityTab">
+        <!-- 打卡 -->
+        <view class="punchItem" bindtap="punchItem">
+            <view class="punchTitle {{!isShow?'selectedText':''}}">考勤</view>
+        </view>
+        <!-- 文件收集 -->
+        <view class="fileItem"  bindtap="fileItem">
+            <view class="fileTitle {{isShow?'selectedText':''}}">文件收集</view>
+        </view>
+</view>
+<punch wx:if="{{!isShow}}"></punch>
+<file wx:if="{{isShow}}"></file>

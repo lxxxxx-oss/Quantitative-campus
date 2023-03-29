@@ -1,0 +1,78 @@
+page {
+    background-color: #f6f7fb;
+}
+.description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20rpx;
+}
+.description>view {
+    width: 100rpx;
+    height: 60rpx;
+}
+.example {
+    position: fixed;
+    right: 50rpx;
+}
+.example1,
+.example2 {
+    width: 20rpx;
+    height: 20rpx;
+    margin: 10rpx 0;
+    border-radius: 20rpx;
+    background-color: #4BB5E9;
+}
+.example2 {
+    background-color: #b54036;
+}
+.doorway {
+    position: absolute;
+    top: -40rpx;
+    left: 25rpx;
+}
+.roomDetail {
+    width: 57%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 200rpx auto;
+    text-align: center;
+}
+.roomDetail>view {
+    position: relative;
+    width: 33%;
+    height: 250rpx;
+    border: 2rpx solid #666;
+}
+.roomDetail view:nth-child(2) {
+    border-bottom: none;
+}
+.roomDetail view:nth-child(5) {
+    border: none;
+}
+.roomDetail view:nth-child(5) text{
+    margin: 60rpx 0;
+    writing-mode: vertical-lr;
+}
+.roomDetail view:nth-child(8) {
+     border-top: none;
+ }
+.roomDetail>view:last-child {
+    width: 99%;
+    height: 110rpx;
+    padding-top: 30rpx;
+    text-align: center;
+}
+/* 小圆圈 */
+.circle {
+    width: 50rpx;
+    height: 50rpx;
+    /*盒子垂直，水平居中*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #07c160;*/
+    border-radius: 50%;
+    line-height: 50rpx;
+}

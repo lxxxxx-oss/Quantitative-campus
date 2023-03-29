@@ -1,0 +1,83 @@
+page {
+    background-color: #fff;
+}
+/* 迎新服务 */
+.spaceWelcome {
+    /* background-color: #fff; */
+    margin-top: 50rpx;
+}
+/* 标题 */
+.Title {
+    border-bottom: 3rpx solid #F5F6FA;
+    font-size: 32rpx;
+    padding: 30rpx 0 20rpx 30rpx;
+}
+/* 功能选项 */
+.management {
+    display: flex;
+    justify-content: space-around;
+    height:200rpx;
+    background-color: #fff;
+    margin-top: 30rpx;
+    /* box-shadow: 20px 30px 20px 2px rgba(0,0,0,0.1); */
+}
+/* 各个功能图标 */
+.managementUi {
+    display: block;
+    height: 70rpx;
+    width: 80rpx;
+    margin: 30rpx 0 13rpx 0;
+}
+/* 功能名称 */
+.manageText {
+    font-size: 30rpx;
+    font-weight: 500;
+    margin-left: -20rpx;
+}
+/* 颜色 */
+.colorText1 {
+    color: #4BB5E9;
+}
+.colorText2 {
+    color: #3C8ED7;
+}
+
+
+
+/* 其他 */
+.spaceElse {
+    background-color: #fff;
+    margin-top: 30rpx;
+}
+
+/* 各个功能图标 */
+.elseUi {
+    display: block;
+    height: 70rpx;
+    width: 80rpx;
+    margin: 30rpx 0 13rpx 10rpx;
+}
+/* 功能名称 */
+.elseText {
+    font-size: 35rpx;
+    font-weight: 500;
+    margin-left: -10rpx;
+}
+/* 颜色 */
+.blueText1 {
+    color: #A1D9F2;
+}
+.blueText2 {
+    color: #80B8F8;
+}
+.greenText {
+    color: #5cace0;
+}
+.yellowText {
+    color: #4BB5E9;
+}
+.studyRoom {
+    margin: 55rpx 0 0 60rpx;
+}
+
+

@@ -1,0 +1,27 @@
+<!-- 通知详情页 -->
+<view class="publishInfo">
+    <!-- 通知标题和截止时间 -->
+    <view class="publishTitle">{{publishList[index].publishTitle}}</view>
+    <view class="deadline">截至时间：{{publishList[index].deadline}}</view>
+    <view class="infoBottom">
+        <!-- 用户信息展示区域 -->
+        <view class="userInfo">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <view>{{typeList[userType]}}</view>
+        </view>
+        <!-- 通知类型 -->
+        <view class="publishTag">{{publishTag[index]}}</view>
+    </view>
+</view>
+<!-- 通知的内容 -->
+<view class="publishContent">
+    <view class="contentTitle">通知内容</view>
+    <text selectable='true'>{{publishList[index].textareaValue}}</text>
+</view>
+<!-- 通知配图 -->
+<view class="imgTitle">通知配图</view>
+<view class="pulishImg">
+    <view>
+        <image src="{{imgList[index]}}" bindtap="viewImg"  data-index="{{index}}" mode="aspectFill"></image>
+    </view>
+</view>

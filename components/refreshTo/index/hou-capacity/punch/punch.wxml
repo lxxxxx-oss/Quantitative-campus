@@ -1,0 +1,10 @@
+<view class="allPunch" wx:for="{{dormPunch}}" wx:key="{{index}}" bindtap="punchDetail" data-index="{{index}}">
+    <view class="punchCond">
+        <view>{{item.floor}}打卡情况</view>
+    </view>
+    <view class="finishCond">
+        <view wx:if="{{item.status}}" style="color: #20d5f5;">全部完成</view>
+            <view wx:if="{{!item.status}}" style="color: rgb(252, 15, 15);">未全部完成</view>
+            <view>剩余宿舍：{{item.remain}}</view>
+        </view>
+</view>

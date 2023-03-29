@@ -1,0 +1,13 @@
+<view class="overView">
+    <view class="desc">
+        <view class="titl">未完成全部打卡的宿舍</view>
+        <view class="unfinishRoom">未完成宿舍：<view style="color: red">{{unfinishDoors}}</view></view>
+        <button class="detailBtn" bindtap="showDetailRoom">点击查看详情</button>
+    </view>
+
+</view>
+<view class="detailDesc" hidden="{{isShow}}">
+    <view class="nameList" wx:for="{{dormInfo}}" wx:if="{{!item.status}}">
+        <view>{{item.doors}}未完成人员：<text style="color: red">{{item.unfinishName}}</text></view>
+    </view>
+</view>

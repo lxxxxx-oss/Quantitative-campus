@@ -1,0 +1,9 @@
+<view class="dialogue">
+    <view class="stuAndTeaContainer" wx:for="{{dialogue}}" wx:key="index">
+        <view class="student">{{item.student}}</view>
+        <view class="teacher">
+            <view>老师：</view>
+            <view>{{item.teacher}}</view>
+        </view>
+    </view>
+</view>

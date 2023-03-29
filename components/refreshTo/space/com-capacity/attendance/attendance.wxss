@@ -1,0 +1,90 @@
+/* 班级整体情况 */
+.entirety {
+    margin-top: 80rpx;
+    padding: 0 20rpx;
+    border-radius: 20rpx;
+    background-color: #CBEBF8;
+}
+.inform {
+    height: 200rpx;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30rpx;
+}
+.proportion {
+    color: #000000;
+    font-size: 55rpx;
+}
+.leave {
+    font-size: 40rpx;
+    color: #A2A3B7;
+}
+.date {
+    float: right;
+    font-size: 35rpx;
+    color: #9c9595 ;
+}
+
+/* 图标 */
+.icon {
+    position: relative;
+    height: 50rpx;
+    width: 50rpx;
+}
+.icon image {
+    position: absolute;
+    left:40%;
+    top:20rpx;
+    height: 50rpx;
+    width: 50rpx;
+}
+.leaveText {
+    position: absolute;
+    top: 25rpx;
+    left: 55%;
+    font-size: 28rpx;
+    color: rgb(247, 56, 56);
+}
+.su-table-box {
+    height: 840rpx;
+    overflow-x: auto;
+    margin-top: 100rpx;
+    padding-bottom: 40rpx;
+    border-radius: 10rpx;
+}
+
+.su-table, .title {
+    margin: 0 auto;
+    display: table;
+    border-collapse: collapse;
+    overflow-x: auto;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.su-tr {
+    display: table-row;
+}
+.su-th {
+    display: table-cell;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 40rpx;
+    background-color: #4BB5E9;
+    color: #FFFFFF;
+}
+
+.su-td {
+    display: table-cell;
+    height: 90rpx;
+    width: 50%;
+    line-height: 90rpx;
+    text-align: center;
+    border: 1rpx solid #DDDDDD;
+    border-right: none;
+}
+.scroll-view-item {
+    display: inline-block;
+}

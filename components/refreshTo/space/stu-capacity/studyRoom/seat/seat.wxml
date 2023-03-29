@@ -1,0 +1,58 @@
+<view class="addrContainer">
+    <view class="chooseBtn" bindtap="showPopup">预定座位（选择地点与楼层）</view>
+    <!--    遮罩层-->
+    <van-popup show="{{ show }}" position="bottom" bind:close="onClose">
+        <van-picker columns="{{ columns }}" bind:change="onChange" />
+    </van-popup>
+    <!--    选择的地址-->
+    <view class="address">
+        <icon class="icon-box-img" type="address" size="22"></icon>
+        <text>位置：{{addressObj.place}}{{addressObj.floor}}</text>
+    </view>
+    <!--    温馨提示-->
+    <view class="tip">
+        <view class="seatings">
+            <view>
+                <view class="yes"></view> <text>可选</text>
+            </view>
+            <view>
+                <view class="no"></view> <text>不可选</text>
+            </view>
+            <view>
+                <view class="hasReservation"></view><text>预定</text>
+            </view>
+            <view>
+                <view class="selected"></view><text>已选</text>
+            </view>
+        </view>
+<!--    座位图-->
+        <view wx:if="{{addressObj.place}}">
+            <view class="desc">
+                <view class="elevatorDesc">电梯出口处</view>
+            </view>
+            <view>
+                <view class="visualSeating">
+                    <view wx:for="{{seatingsObj}}" wx:key="index" data-index="{{index}}" bindtap="getSeatRow">
+                        <view class="sigle {{item==0?'haveOne': ''}} {{item==2?'seclecting': ''}} {{item==3?'reservated': ''}}" wx:for="{{item}}" wx:key="index" data-index="{{index}}" bindtap="getSeatNum" ></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:else class="noPictier">
+            <text>暂无座位图例，请选择</text>
+            <image src="/assets/img/space/stu-icon/zixishi.png"></image>
+        </view>
+        <view hidden="{{hiddenMask}}" class="mask" bindtap="warnUser"></view>
+<!--        座位详细信息-->
+        <view class="detailSeat">
+            <view>座位号：{{row}}{{seatNum+1<10?'0'+(seatNum+1):seatNum+1}}</view>
+            <view>入座时间：2023年3月14日</view>
+            <view>离座时间：2023年3月14日</view>
+        </view>
+<!--        按钮-->
+        <view class="btns">
+            <button class="selectBtn" bindtap="confirm" disabled="{{isTap}}">预约该座位</button>
+            <button class="selectBtn" bindtap="cancel" disabled="{{!isTap}}">取消预约</button>
+        </view>
+    </view>
+</view>

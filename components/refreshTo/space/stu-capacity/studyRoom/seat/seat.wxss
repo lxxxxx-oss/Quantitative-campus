@@ -1,0 +1,124 @@
+page {
+    background-color: #f6f7fb;
+    font: 32rpx '微软雅黑';
+}
+.addrContainer {
+    padding: 20rpx;
+    background-color: #ffffff;
+}
+.chooseBtn {
+    margin-bottom: 10rpx;
+    text-align: center;
+    height: 110rpx;
+    line-height: 110rpx;
+    border-radius: 50rpx;
+    color: white;
+    font-size: 35rpx;
+    background-color: #07c160;
+}
+.address {
+    height: 60rpx;
+    padding: 10rpx;
+    font-size: 32rpx;
+    /*border: 2rpx solid red;*/
+}
+
+/*座位区域*/
+.tip {
+    margin: 30rpx 0;
+}
+.tip .seatings {
+    display: flex;
+    justify-content: space-between;
+}
+.desc {
+    margin: 50rpx 20rpx 0;
+}
+.elevatorDesc {
+    text-align: center;
+}
+.yes, .no, .hasReservation, .selected {
+    height: 8vw;
+    width: 8vw;
+    margin: 1vw;
+    border-radius: 8rpx;
+    box-sizing: border-box;
+}
+.yes, .no, .hasReservation, .selected {
+    border: 2rpx solid black;
+}
+/*已经有人选择*/
+.haveOne {
+    background-color: red;
+}
+/*某人正在预定*/
+.seclecting {
+    background-color: yellow;
+}
+/*预约完成的类名*/
+.reservated {
+    background-color: green;
+}
+.no {
+    background-color: red;
+}
+.hasReservation {
+    background-color: yellow;
+}
+.selected {
+    background-color: green;
+}
+.visualSeating>view {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 50rpx;
+}
+.visualSeating .sigle{
+    width: 5%;
+    margin: 5rpx;
+    border: 2rpx solid black;
+    border-radius: 10rpx;
+}
+/*没有座位时显示的图片*/
+.noPictier {
+    position: relative;
+    margin: 50rpx 0;
+    text-align: center;
+}
+.noPictier text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10rpx);
+    color: red;
+}
+.noPictier image {
+    height: 340rpx;
+}
+.mask {
+    position: absolute;
+    top: 400rpx;
+    width: 650rpx;
+    height: 341rpx;
+    border: 2rpx solid red;
+    opacity: 0;
+}
+/* 详细座位号 */
+.detailSeat {
+    margin: 50rpx;
+}
+/* 按钮 */
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220rpx;
+}
+.selectBtn {
+    padding: 0;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 30rpx;
+    background-color: #07c160;
+}

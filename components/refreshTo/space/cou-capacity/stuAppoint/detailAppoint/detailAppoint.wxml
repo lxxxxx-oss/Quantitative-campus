@@ -1,0 +1,24 @@
+<view class="su-table-box">
+    <!-- 表格标题 -->
+    <view class="tableTh">
+        <view class="su-tr">
+            <view class="su-th">人员名单</view>
+            <view class="su-th">操作</view>
+        </view>
+    </view>
+    <scroll-view class="tableY" scroll-y style="height: 100%;">
+        <view class="su-table">
+            <!-- 表格内容 -->
+            <view class="su-tr" wx:for="{{className}}" wx:key="index">
+                <view class="su-td">
+                    <icon class="{{index == currentIndex ? 'showIcon': 'hiddenIcon'}}" type="success_no_circle" size="30" data-index="{{index}}"></icon>
+                    <text>{{item}}</text>
+                </view>
+                <view class="su-td">
+                    <!-- 指定该学生为班委的按钮-->
+                    <view class="appointBtn" bindtap="appointBtn" data-index="{{index}}">指定</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

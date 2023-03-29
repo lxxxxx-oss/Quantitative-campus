@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # 量化校园2.0
 
 #### Description
 {**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+=======
+# 量化校园
+
+#### Description
+微信小程序帮助辅导员完成日常工作的量化系统
+>>>>>>> fb71f42 (2.0的上传)
 
 #### Software Architecture
 Software architecture description

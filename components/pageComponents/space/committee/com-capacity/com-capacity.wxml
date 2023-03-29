@@ -1,0 +1,18 @@
+<!-- 这是班委特有的功能 -->
+<view class="spaceElse">
+    <view class="Title">班级管理</view>
+    <view class="management">
+        <view bindtap="gotoFile">
+            <image src="/assets/img/space/com-icon/flieManage.png" class="elseUi"></image>
+            <view class="management blueText">文件审核</view>
+        </view>
+        <view bindtap="gotoAttendance">
+            <image src="/assets/img/space/com-icon/attendance.png" class="elseUi"></image>
+            <view class="management redText">出勤状况</view>
+        </view>
+        <view>
+            <image src="" class="elseUi"></image>
+            <view class="management purpleText"></view>
+        </view>
+    </view>
+</view>   

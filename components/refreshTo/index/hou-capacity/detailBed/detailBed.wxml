@@ -1,0 +1,32 @@
+<!-- 床位管理 -->
+<view class="description">
+    床位位置示意图：宿舍进门方向，从左到右依次是：床位1、床位2、床位3、床位4、床位5、床位6
+    <view class="example">
+        <view><view class="example1"></view>无人</view>
+        <view><view class="example2"></view>已有人</view>
+    </view>
+</view>
+<view class="roomDetail">
+    <view>
+        <view class="circle" style="background-color:{{bg1}}">1</view>
+    </view>
+    <view><text class="doorway">门口</text></view>
+    <view>
+        <view class="circle" style="background-color:{{bg2}}">2</view>
+    </view>
+    <view>
+        <view class="circle" style="background-color:{{bg3}}">3</view>
+    </view>
+    <view><text>过</text><view>道</view></view>
+    <view>
+        <view class="circle" style="background-color:{{bg4}}">4</view>
+    </view>
+    <view>
+        <view class="circle" style="background-color:{{bg5}}">5</view>
+    </view>
+    <view></view>
+    <view>
+        <view class="circle" style="background-color:{{bg6}}">6</view>
+    </view>
+    <view>阳台</view>
+</view>

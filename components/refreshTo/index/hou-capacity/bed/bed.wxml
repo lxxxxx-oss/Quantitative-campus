@@ -1,0 +1,11 @@
+<!-- 床位管理 -->
+<view class="dormEmpty" wx:for="{{dormEmpty}}" wx:if="{{!item.status}}" bindtap="gotoDetailBed"
+id="{{item.doors}}">
+    <view class="emptyDoors">
+        <view>{{item.doors}}</view>
+    </view>
+    <view class="emptyNum">
+        <view>空位：{{item.emptyCount}}</view>
+        <view>空床号码：{{item.empty}}</view>
+    </view>
+</view>

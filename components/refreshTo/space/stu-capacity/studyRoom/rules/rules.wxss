@@ -1,0 +1,23 @@
+page {
+    background-color: #f5f7f9;
+}
+.stuAndTeaContainer {
+    width: 80%;
+    margin: 35rpx auto;
+    padding: 20rpx;
+    font: 32rpx/1.5 '微软雅黑';
+    color: #657180;
+    background-color: #ffffff;
+}
+.stuAndTeaContainer .student {
+    margin-bottom: 10rpx;
+    font: bold 32rpx/1.5 '微软雅黑';
+    color: #464c5b;
+}
+.stuAndTeaContainer .teacher {
+    display: flex;
+    flex-direction: row;
+}
+.stuAndTeaContainer .teacher view:first-child {
+    white-space:nowrap;
+}

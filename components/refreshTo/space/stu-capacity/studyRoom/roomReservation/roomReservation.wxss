@@ -1,0 +1,136 @@
+/*通知*/
+.notice {
+    width: 92%;
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: #fff;
+    box-shadow: 0 3rpx 6rpx 1rpx rgba(0,0,6,0.4100);
+    border-radius: 30rpx;
+    position: absolute;
+    top: 20rpx;
+    left: 30rpx;
+    display: flex;
+}
+
+.notice image {
+    width: 15%;
+    margin: 13rpx 20rpx;
+}
+
+.notice .notice_desc {
+    margin-right: 40rpx;
+    font-size: 28rpx;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*预约时间*/
+.timeContainer {
+    margin: 100rpx 0 0;
+}
+.panel {
+    background-color: #fff;
+    box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, .1);
+    border-radius: 6rpx;
+    width: 100%;
+    margin-bottom: 20rpx;
+    padding: 20rpx;
+}
+.ruleAndDateContainer {
+    padding-right: 40rpx;
+}
+.panel-title {
+    display: inline-block;
+    font-size: 36rpx;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+}
+
+.rule {
+    float: right;
+    width: 60 rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    padding: 3rpx 15rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid red;
+    color: red;
+}
+
+.picker {
+    font-size: 32rpx;
+    color: #333;
+}
+.timeContainer .timeQuantum {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.timeItem {
+    height: 60rpx;
+    margin: 6rpx 15rpx;
+    padding: 0 10rpx;
+    line-height: 60rpx;
+    background-color: #3464ec;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 30rpx;
+    color: white;
+}
+/* 已经预约的座位 */
+.ownSeat {
+    position: relative;
+    padding: 0 20rpx;
+    height: 400rpx;
+}
+.seatTitle {
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.ownSeat image {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 400rpx;
+    z-index: -11;
+}
+.ownSeat view:nth-child(3),
+.ownSeat view:nth-child(4){
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 30rpx);
+    font-size: 34rpx;
+    text-align: center;
+    color: #afafaf;
+}
+/*选座按钮*/
+.chooseSeatBtn {
+    position: relative;
+    top: 120rpx;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 368rpx;
+}
+.chooseSeatBtn .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 175rpx;
+    border-radius: 20rpx;
+    background-image: linear-gradient(to right bottom , #75d7ff,#3464ec, #3464ec);
+    box-shadow: 4rpx 4rpx 20rpx rgba(91, 207, 251,.9);
+    font: bold 38rpx '微软雅黑';
+    color: #fdffff;
+}
+.chooseSeatBtn .btn image {
+    width: 100rpx;
+    height: 100rpx;
+}
+.chooseSeatBtn .btn text {
+    width: 100rpx;
+}

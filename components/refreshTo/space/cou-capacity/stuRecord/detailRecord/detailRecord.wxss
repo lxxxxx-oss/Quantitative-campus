@@ -1,0 +1,49 @@
+page {
+    background-color: #fff;
+}
+.su-table-box {
+    margin-top: 100rpx;
+    height: 100%;
+    padding-bottom: 40rpx;
+}
+
+.su-table {
+    margin: 0 auto;
+    display: table;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    width: 90%;
+}
+.su-tr {
+    display: table-row;
+}
+.su-th {
+    display: table-cell;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 40rpx;
+    text-align: center;
+    background-color: #87CEFA;
+    color: #FFFFFF;
+}
+
+.su-td {
+    display: table-cell;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border: 1rpx solid #DDDDDD;
+    font-size: 32rpx;
+}
+
+
+.stuMroal {
+    box-shadow: 2rpx 2rpx 2rpx 0 #cecece;
+    margin: 20rpx -10rpx 20rpx -10rpx;
+}
+.nameInfo {
+    font-size: 40rpx;
+    font-weight: 550;
+    text-align: center;
+    padding: 20rpx 0 0 0;
+}

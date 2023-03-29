@@ -1,0 +1,12 @@
+/* 导入UI库 */
+@import "/utils/icon.wxss";
+@import "/utils/main.wxss";
+/**app.wxss**/
+/* 全局样式 */
+page {
+    background-color: #F6F7FB ;
+    height: 100%;
+    /* 设置版心 */
+    padding: 0 30rpx;
+    box-sizing:border-box;
+}

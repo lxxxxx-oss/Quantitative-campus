@@ -1,0 +1,8 @@
+<!-- 辅导员功能选项 -->
+<cou-capacity wx:if="{{isCou}}"></cou-capacity>
+
+<!-- 学生功能选项 -->
+<stu-capacity wx:if="{{isStu || isCom}}"></stu-capacity>
+
+<!-- 班委功能选项 -->
+<com-capacity wx:if="{{isCom}}"></com-capacity>

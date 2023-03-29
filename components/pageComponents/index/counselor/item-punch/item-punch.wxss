@@ -1,0 +1,92 @@
+page {
+  background-color: #fff;
+}
+.codeName {
+    font-size: 40rpx;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20rpx;
+}
+/* 班级整体情况 */
+.entirety {
+  position: relative;
+  padding: 0 20rpx;
+}
+.inform {
+  height: 100rpx;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30rpx;
+}
+.proportion {
+  color: #000000;
+  font-size: 35rpx;
+}
+.leave {
+  font-size: 35rpx;
+  color: #9c9595 ;
+}
+.date {
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+  font-size: 35rpx;
+  color: #9c9595 ;
+}
+.icon {
+    position: relative;
+    height: 50rpx;
+    width: 50rpx;
+}
+.icon image {
+    position: absolute;
+    left:40%;
+    top:20rpx;
+    height: 50rpx;
+    width: 50rpx;
+}
+.leaveText {
+    position: absolute;
+    top: 25rpx;
+    left: 55%;
+    font-size: 28rpx;
+    color: rgb(247, 56, 56);
+}
+.su-table-box {
+    height: 870rpx;
+    padding: 0 30rpx;
+    overflow-x: auto;
+}
+
+.su-table,.tableTh {
+    margin: 0 auto;
+    display: table;
+    border-collapse: collapse;
+    overflow-x: auto;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.su-tr {
+    display: table-row;
+}
+.su-th {
+    display: table-cell;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 40rpx;
+    background-color: #6D00B6;
+    color: #FFFFFF;
+}
+
+.su-td {
+    display: table-cell;
+    height: 90rpx;
+    width: 50%;
+    line-height: 90rpx;
+    text-align: center;
+    border: 1rpx solid #DDDDDD;
+    font-size: 30rpx;
+}

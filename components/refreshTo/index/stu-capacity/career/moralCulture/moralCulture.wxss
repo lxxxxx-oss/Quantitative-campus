@@ -1,0 +1,72 @@
+page {
+    padding: 0;
+    margin: 0;
+}
+/* 未进行综测上传的提示语 */
+.noUpload {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+}
+.noUpload image {
+    width: 100%;
+    height: 80%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+}
+
+.cu-form-group .title {
+    min-width: calc(4em + 30rpx);
+}
+/* 综测总分 */
+.totalPoints {
+    margin: 20rpx 0 30rpx 50rpx;
+    /* background-color: red; */
+    font-size: 40rpx;
+}
+.points {
+    font-size: 50rpx;
+    color: red;
+}
+
+/* 刷新按钮 */
+.refresh {
+    float: right;
+    background-color: #33CC99;
+    margin: 0 30rpx 0 0;
+    padding: 10rpx;
+    border-radius: 10rpx;
+    font-size: 40rpx;
+    color: #fff;
+}
+/* 可拖动的悬浮按钮 */
+/* 可拖动的区域 */
+.movable-area{
+    pointer-events:none;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/* 发布通知按钮 */
+.publishBtn {
+    position: fixed;
+    bottom: 100rpx;
+    right: 20rpx;
+    height: 150rpx;
+    width: 150rpx;
+    background-color:#5ec6e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publishBtn image {
+    height: 130rpx;
+    width: 130rpx;
+}

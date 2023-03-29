@@ -1,0 +1,17 @@
+<view class="printTitle">
+    <view>学生寝况一览</view>
+    <view class="printBtn" bindtap="print">前往打印</view>
+</view>
+<view class="su-table-box">
+    <view class="su-table">
+        <!-- 表格标题 -->
+        <view class="su-tr">
+            <view class="su-th" wx:for="{{list.th}}" wx:key="index">{{item}}</view>
+        </view>
+        <!-- 表格内容 -->
+        <view class="su-tr" wx:for="{{td}}" wx:for-item="tdinfo" wx:key="index">
+            <view class="su-td" wx:for="{{tdinfo}}" wx:key="index">{{item}}</view>
+        </view>
+    </view>
+</view>
+

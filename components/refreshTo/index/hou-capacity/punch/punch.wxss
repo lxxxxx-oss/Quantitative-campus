@@ -1,0 +1,20 @@
+.allPunch {
+    height: 251rpx;
+    margin: 75rpx 25rpx;
+    padding: 40rpx;
+    background-color: #3C8ED7;
+    border-radius: 20rpx;
+    font-size: 45rpx;
+    color: #FFFFFF;
+    box-shadow: -2rpx 15rpx 10rpx 0 rgba(0,0,0,0.2);
+}
+.punchCond {
+    font-size: 45rpx;
+    font-weight: 550;
+}
+.finishCond {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80rpx;
+    font-size: 35rpx;
+}

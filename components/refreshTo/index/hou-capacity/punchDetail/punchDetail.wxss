@@ -1,0 +1,43 @@
+page {
+    background-color: #f6f7fb;
+    font: 40rpx "微软雅黑";
+}
+.overView,
+.detailDesc {
+    width: 650rpx;
+    /*height: 200rpx;*/
+    /*overflow: hidden;*/
+    display:inline-block;
+    margin-top: 50rpx;
+    padding: 0 30rpx;
+    border-radius: 25rpx;
+    background-color: skyblue;
+    box-shadow: -2rpx 15rpx 10rpx 0 rgba(0,0,0,0.1);
+    color: #000;
+}
+.desc .titl {
+    margin: 25rpx 0 40rpx 0;
+}
+/* 文本多了后要换行显示 */
+.desc .unfinishRoom {
+    width: 100%;
+    display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.overView .detailBtn {
+    width: 200rpx;
+    height: 50rpx;
+    margin: 20rpx auto;
+    padding: 0;
+    border-radius: 20rpx;
+    color: #ccc;
+    font: 25rpx/50rpx '宋体';
+}
+.detailDesc {
+    /*transition: all 5s linear 4s;*/
+    font-size: 30rpx;
+}
+.detailDesc .nameList{
+    margin: 20rpx 0;
+}

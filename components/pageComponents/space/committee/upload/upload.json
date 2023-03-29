@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+    },
+    "navigationBarTitleText": "上传文件",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#8F0105"
+}

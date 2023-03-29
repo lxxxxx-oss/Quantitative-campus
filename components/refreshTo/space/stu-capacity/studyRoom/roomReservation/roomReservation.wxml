@@ -1,0 +1,52 @@
+<!--pages/index/index.wxml-->
+<view class="seatReservation">
+    <!--    通知-->
+    <view class="notice">
+        <image src="/assets/img/space/stu-icon/horn.png" mode="widthFix"></image>
+        <view class="notice_desc">
+            <view style="transform: translateX(-{{ distance }}px);">
+                <text style="margin-right:{{ space }}px；"></text>
+                <text id="mjltest">{{ text }}</text>
+                <text style="margin-right:{{ space }}px;"></text>
+                <text>{{ text }}</text>
+            </view>
+        </view>
+    </view>
+    <!--    预约时间的选择以及使用规则-->
+    <view class="timeContainer">
+        <view class="panel">
+            <view class="ruleAndDateContainer">
+                <text class="panel-title">选择日期</text>
+                <text class="rule" bindtap="toRulePage">注意事项</text>
+            </view>
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                <view class="picker">
+                    {{date}}
+                </view>
+            </picker>
+        </view>
+        <view class="panel">
+            <text class="panel-title">选择时间段</text>
+            <view class="timeQuantum">
+                <view class="timeItem" wx:for="{{timeArr}}" wx:key="index" data-index="{{index}}" bindtap="getTime">{{item}}</view>
+            </view>
+        </view>
+    </view>
+    <!--    已经预约的座位-->
+    <view class="ownSeat">
+        <view class="seatTitle">已选座信息</view>
+        <image wx:if="{{!seatInfo.floor}}" src="/assets/img/space/stu-icon/default.png"></image>
+        <!-- <view wx:if="{{!seatInfo.floor}}">您还没有预约的座位哟</view> -->
+        <view wx:else>
+            <view>{{seatInfo.place}}{{seatInfo.floor}}{{seatInfo.row}}{{seatInfo.seatNum+1<10?"0"+(seatInfo.seatNum+1):seatInfo.seatNum+1}}</view>
+            <view>{{date}} {{time}}</view>
+        </view>
+    </view>
+    <!--    自主选座按钮-->
+    <view class="chooseSeatBtn">
+        <button class="btn" bindtap="goSeatePage">
+            <image src="/assets/img/space/stu-icon/seat.png"></image>
+            <text>点击选座</text>
+        </button>
+    </view>
+</view>

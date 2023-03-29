@@ -1,0 +1,90 @@
+<!--更改头像-->
+<view class="changeAvater">
+    <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image></image>
+    </button>
+</view>
+<!-- 用户信息 -->
+<view class="userMessage">
+    <!-- 用户头像区域 -->
+    <view class="headPortrait">
+        <image src="{{avatarUrl?avatarUrl:'/assets/img/home/defaultAvatar.png'}}"></image>
+    </view>
+    <!-- 用户名称区域 -->
+    <view class="userInfo">
+        <view class="infoOne">用户类型：{{typeList[userType]}}</view>
+        <view class="infoOne">学号/工号：{{acount}}</view>
+    </view>
+</view>
+
+<!-- 选项卡 -->
+<!-- 可展开的多列表 -->
+<view class="tabWidget" >
+    <!-- 个人信息展示 -->
+    <view class="tab"  bindtap="unfoldInfo">
+        <image src="/assets/img/home/idCard.png" class="tabUi"></image>
+        <view class="cu-bar bg-white title">
+            <view class="action border-title">
+                <text class="text-xl text-bold text-black">个人信息</text>
+                <text class="bg-blue" style="width:3rem"></text>
+            </view>
+        </view>
+        <image src="/assets/img/home/rightArrows.png" class="arrow" style="transform:{{isShowInfo?'rotate(90deg)' : 'rotate(0)'}}"></image>
+    </view>
+    <!-- 可以折叠的详细描述信息 -->
+    <view wx:if="{{isShowInfo}}" class="unfold">
+      <block>
+        <view>{{index}}</view>
+        <view>{{item}}</view>
+            <text class="info text-bold" wx:for="{{info}}" wx:key="number" >{{index}} : {{item}}</text>
+      </block>
+    </view>
+    <!-- 我的设置选项 -->
+    <view class="tab" bindtap="unfoldSetting">
+        <image src="/assets/img/home/setting.png" class="tabUi"></image>
+        <view class="cu-bar bg-white title">
+            <view class="action border-title">
+                <text class="text-xl text-bold text-black">我的设置</text>
+                <text class="bg-blue" style="width:3rem"></text>
+            </view>
+        </view>
+        <image src="/assets/img/home/rightArrows.png" class="arrow" style="transform:{{isShowSet?'rotate(90deg)' : 'rotate(0)'}}"></image>
+    </view>
+    <view wx:if="{{isShowSet}}" class="unfold">
+            <view class="info">
+                <button class="cu-bar bg-white" bindtap="gotoChange">
+                    <text class="text-xl text-black margin-left">修改密码</text>
+                </button>
+                <image src="/assets/img/home/rightArrows.png" class="arrow"></image>    
+            </view>
+
+            <view class="info">
+                <button class="cu-bar bg-white" open-type="contact">
+                    <text class="text-xl  text-black margin-left">联系我们</text>
+                </button>
+                <image src="/assets/img/home/rightArrows.png" class="arrow"></image>    
+            </view>
+
+            <view class="info">
+                <button class="cu-bar bg-white" bindtap="aboutUs">
+                    <text class="text-xl text-black margin-left">关于我们</text>
+                </button>
+                <image src="/assets/img/home/rightArrows.png" class="arrow"></image>    
+            </view>
+
+            <view class="info">
+                <button class="cu-bar bg-white" bindtap="clearStorage">
+                    <text class="text-xl text-black margin-left">清除缓存</text>
+                </button>
+                <image src="/assets/img/home/rightArrows.png" class="arrow"></image>    
+            </view>
+
+            <view class="info">
+                <button class="cu-bar bg-white" bindtap="loginout">
+                    <text class="text-xl text-black margin-left">退出登录</text>
+                </button>
+                <image src="/assets/img/home/rightArrows.png" class="arrow"></image>    
+            </view>
+    </view>
+</view>
+

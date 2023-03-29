@@ -1,0 +1,19 @@
+.dormEmpty {
+    /*width: 95%;*/
+    height: 251rpx;
+    margin: 75rpx 25rpx;
+    padding: 40rpx;
+    background-color: #3C8ED7;
+    border-radius: 20rpx;
+    color: #FFFFFF;
+}
+.emptyDoors>view {
+    font-size: 45rpx;
+    font-weight: 550;
+}
+.emptyNum {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70rpx;
+    font-size: 35rpx;
+}

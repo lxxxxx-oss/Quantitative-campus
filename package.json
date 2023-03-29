@@ -1,0 +1,23 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "微信小程序帮助辅导员完成日常工作的量化系统",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "@vant/weapp": "^1.10.14",
+    "coolui-scroller": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxxxxx-oss/-.git"
+  },
+  "author": "Lesedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxxxxx-oss/-/issues"
+  },
+  "homepage": "https://github.com/lxxxxx-oss/-#readme"
+}

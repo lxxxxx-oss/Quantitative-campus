@@ -1,0 +1,111 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/space/space",
+        "pages/print/print",
+        "pages/home/home",
+        "pages/log/log",
+        "components/refreshTo/index/hou-capacity/affiche/affiche",
+        "components/refreshTo/index/hou-capacity/bed/bed",
+        "components/refreshTo/index/hou-capacity/punch/punch",
+        "components/refreshTo/index/hou-capacity/state/state",
+        "components/refreshTo/index/cou-capacity/destination/destination",
+        "components/refreshTo/index/cou-capacity/gather/gather",
+        "components/refreshTo/index/cou-capacity/gather/gatherDetail/gatherDetail",
+        "components/refreshTo/index/cou-capacity/inform/inform",
+        "components/refreshTo/index/cou-capacity/publish/publish",
+        "components/refreshTo/index/stu-capacity/career/career",
+        "components/refreshTo/index/stu-capacity/uploadAwards/uploadAwards",
+        "components/refreshTo/index/stu-capacity/career/moralCulture/moralCulture",
+        "components/refreshTo/index/stu-capacity/career/finalGrade/finalGrade",
+        "components/refreshTo/index/stu-capacity/inform/inform",
+        "components/refreshTo/index/stu-capacity/punch/punch",
+        "components/refreshTo/index/stu-capacity/publishDetail/publishDetail",
+        "components/refreshTo/index/stu-capacity/schedule/schedule",
+        "components/refreshTo/my/cou-capacity/myMessage/myMessage",
+        "components/refreshTo/my/setting/change/change",
+        "components/refreshTo/my/setting/aboutUs/aboutUs",
+        "components/refreshTo/space/com-capacity/attendance/attendance",
+        "components/refreshTo/space/com-capacity/file/file",
+        "components/refreshTo/space/com-capacity/left/left",
+        "components/refreshTo/space/cou-capacity/stuAppoint/stuAppoint",
+        "components/refreshTo/space/cou-capacity/stuGool/stuGool",
+        "components/refreshTo/space/cou-capacity/stuRecord/stuRecord",
+        "components/refreshTo/space/stu-capacity/ammeter/ammeter",
+        "components/refreshTo/space/stu-capacity/card/card",
+        "components/refreshTo/space/stu-capacity/dorm/dorm",
+        "components/refreshTo/space/stu-capacity/payment/payment",
+        "components/refreshTo/space/stu-capacity/up/up",
+        "components/pageComponents/index/counselor/cou-capacity/cou-capacity",
+        "components/pageComponents/index/counselor/item-file/item-file",
+        "components/pageComponents/index/counselor/item-punch/item-punch",
+        "components/pageComponents/index/student/stu-capacity/stu-capacity",
+        "components/pageComponents/index/houseparent/hou-capacity/hou-capacity",
+        "components/pageComponents/space/committee/com-capacity/com-capacity",
+        "components/pageComponents/space/committee/check/check",
+        "components/pageComponents/space/committee/upload/upload",
+        "components/pageComponents/space/counselor/cou-capacity/cou-capacity",
+        "components/pageComponents/space/student/stu-capacity/stu-capacity",
+        "components/refreshTo/index/cou-capacity/major/major",
+        "custom-tab-bar/index",
+        "components/refreshTo/index/hou-capacity/punchDetail/punchDetail",
+        "components/refreshTo/space/cou-capacity/stuGool/detailInfo/detailInfo",
+        "components/refreshTo/space/cou-capacity/stuAppoint/detailAppoint/detailAppoint",
+        "components/refreshTo/index/common/weather/weather",
+        "components/refreshTo/index/stu-capacity/amendMoral/amendMoral",
+        "components/refreshTo/space/stu-capacity/matchSuccess/matchSuccess",
+        "components/refreshTo/index/hou-capacity/houPublish/houPublish",
+        "components/refreshTo/space/cou-capacity/stuRecord/detailRecord/detailRecord",
+        "components/refreshTo/index/hou-capacity/detailBed/detailBed",
+        "components/refreshTo/space/stu-capacity/studyRoom/roomReservation/roomReservation",
+        "components/refreshTo/space/stu-capacity/studyRoom/rules/rules",
+        "components/refreshTo/space/stu-capacity/studyRoom/seat/seat"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "custom": true,
+        "selectedColor": "#ff0000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/assets/img/tabBar/index.png",
+                "selectedIconPath": "/assets/img/tabBar/index-active.png"
+            },
+            {
+                "pagePath": "pages/print/print",
+                "text": "打印",
+                "iconPath": "/assets/img/tabBar/print.png",
+                "selectedIconPath": "/assets/img/tabBar/print-active.png"
+            },
+            {
+                "pagePath": "pages/space/space",
+                "text": "空间",
+                "iconPath": "/assets/img/tabBar/space.png",
+                "selectedIconPath": "/assets/img/tabBar/space-active.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我的",
+                "iconPath": "/assets/img/tabBar/my.png",
+                "selectedIconPath": "/assets/img/tabBar/my-active.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序内置应用的需要"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation",
+        "chooseLocation"
+    ],
+    "usingComponents": {},
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

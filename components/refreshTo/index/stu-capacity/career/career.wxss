@@ -1,0 +1,32 @@
+page {
+    margin: 0;
+    padding:0 50rpx 0 50rpx;
+}
+/* 标题 */
+.careerTitle {
+    display: flex;
+    margin: 60rpx 0 0;
+    padding-bottom: 20rpx;
+    font-size: 40rpx;
+    font-weight: bolder;
+    border-bottom: 5rpx solid #cecece;
+}
+.careerTitle image {
+    height: 60rpx;
+    width: 54rpx;
+    margin-right: 20rpx;
+}
+/* 时间的选择 */
+.changeTime {
+    margin: 20rpx 0 20rpx 0;
+    text-align: center;
+    font-size: 30rpx;
+    color: rgb(0, 225, 255)
+}
+
+
+.checkGrade {
+    background-color: skyblue;
+    padding: 20rpx;
+    border-radius: 10rpx;
+}
